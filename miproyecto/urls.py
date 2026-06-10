@@ -35,5 +35,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('inicio.urls')),
+    path('', include('inicio.urls'), name="inicio"),
+    path('dashboard', include('dashboard.urls'), name= "dashboard"),
 ]
