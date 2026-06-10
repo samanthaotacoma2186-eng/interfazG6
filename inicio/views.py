@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login as auth_login
+from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import redirect
+
 
 def hola(request):
     return render(request, 'index.html')
@@ -36,16 +38,34 @@ def dashboard(request):
     return render(request, 'dashboard.html')
 
 def login_view(request):
+    if request.user.is_authenticated:
+        return redirect('dashboard')
+
     mensaje = ""
     if request.method == 'POST':
-        username =request.POST.get('username')
+        username = request.POST.get('username')
         password = request.POST.get('password')
         user = authenticate(request,
                             username=username,
                             password=password)
         if user is not None:
-           auth_login(request,user)
-           return redirect('dashboard')
-        else:
-            mensaje = 'Usuario o contraseña incorrectos'
+            auth_login(request, user)
+            return redirect('dashboard')
+        mensaje = 'Usuario o contraseña incorrectos'
     return render(request, 'login.html', {'mensaje': mensaje})
+
+
+def register_view(request):
+    if request.user.is_authenticated:
+        return redirect('dashboard')
+
+    form = UserCreationForm(request.POST or None)
+    mensaje = ''
+
+    if request.method == 'POST':
+        if form.is_valid():
+            form.save()
+            return redirect('login')
+        mensaje = 'Corrige los errores del formulario.'
+
+    return render(request, 'register.html', {'form': form, 'mensaje': mensaje})
