@@ -50,7 +50,7 @@ def login_view(request):
                             password=password)
         if user is not None:
             auth_login(request, user)
-            return redirect('dashboard')
+            return redirect('/dashboard/')
         mensaje = 'Usuario o contraseña incorrectos'
     return render(request, 'login.html', {'mensaje': mensaje})
 
@@ -64,7 +64,13 @@ def register_view(request):
 
     if request.method == 'POST':
         if form.is_valid():
-            form.save()
+            user = form.save()
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password1')
+            user = authenticate(request, username=username, password=password)
+            if user is not None:
+                auth_login(request, user)
+                return redirect('/dashboard/')
             return redirect('login')
         mensaje = 'Corrige los errores del formulario.'
 
