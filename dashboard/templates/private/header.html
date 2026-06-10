@@ -7,7 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Flexy Free Bootstrap Admin Template by WrapPixel</title>
   <link rel="shortcut icon" type="image/png" href="{% static 'private/images/logos/favicon.png' %}" />
-  <link rel="stylesheet" href="{% static 'private/css/styles.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'private/css/styles.min.css' %}?v=green1" />
+  <style>
+    :root {
+      --bs-primary: #39cb7f;
+      --bs-secondary: #ffffff;
+      --bs-primary-rgb: 57, 203, 127;
+      --bs-primary-bg-subtle: #ebfaf2;
+    }
+    .btn-primary,
+    .bg-primary,
+    .text-bg-primary,
+    .sidebar-item.active > .sidebar-link,
+    .sidebar-link:hover {
+      background-color: #39cb7f !important;
+      color: #ffffff !important;
+      border-color: #39cb7f !important;
+    }
+  </style>
 </head>
 
 <body>

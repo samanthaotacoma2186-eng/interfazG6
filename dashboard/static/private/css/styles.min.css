@@ -9,9 +9,9 @@
 @import "../css/icons/tabler-icons/tabler-icons.css";
 :root,
 [data-bs-theme=light] {
-  --bs-blue: #1e4db7;
+  --bs-blue: #39cb7f;
   --bs-indigo: #6610f2;
-  --bs-purple: #7460ee;
+  --bs-purple: #39cb7f;
   --bs-pink: #e83e8c;
   --bs-red: #fc4b6c;
   --bs-orange: #fb8c00;
@@ -32,8 +32,8 @@
   --bs-gray-700: #4f5467;
   --bs-gray-800: #11142d;
   --bs-gray-900: #223640;
-  --bs-primary: #1e4db7;
-  --bs-secondary: #1a97f5;
+  --bs-primary: #39cb7f;
+  --bs-secondary: #ffffff;
   --bs-success: #39cb7f;
   --bs-info: #0bb2fb;
   --bs-warning: #fdc90f;
@@ -43,8 +43,8 @@
   --bs-muted: #777e89;
   --bs-indigo: #6610f2;
   --bs-light-indigo: #ebf3fe;
-  --bs-primary-rgb: 30, 77, 183;
-  --bs-secondary-rgb: 26, 151, 245;
+  --bs-primary-rgb: 57, 203, 127;
+  --bs-secondary-rgb: 255, 255, 255;
   --bs-success-rgb: 57, 203, 127;
   --bs-info-rgb: 11, 178, 251;
   --bs-warning-rgb: 253, 201, 15;
@@ -54,15 +54,15 @@
   --bs-muted-rgb: 119, 126, 137;
   --bs-indigo-rgb: 102, 16, 242;
   --bs-light-indigo-rgb: 235, 243, 254;
-  --bs-primary-text-emphasis: shade-color(#1e4db7, 60%);
-  --bs-secondary-text-emphasis: shade-color(#1a97f5, 60%);
+  --bs-primary-text-emphasis: shade-color(#39cb7f, 60%);
+  --bs-secondary-text-emphasis: shade-color(#ffffff, 60%);
   --bs-success-text-emphasis: shade-color(#39cb7f, 60%);
   --bs-info-text-emphasis: shade-color(#0bb2fb, 60%);
   --bs-warning-text-emphasis: shade-color(#fdc90f, 60%);
   --bs-danger-text-emphasis: shade-color(#fc4b6c, 60%);
   --bs-light-text-emphasis: #f6f8fb;
   --bs-dark-text-emphasis: #11142d;
-  --bs-primary-bg-subtle: #ddebff;
+  --bs-primary-bg-subtle: #ebfaf2;
   --bs-secondary-bg-subtle: rgba(26, 151, 245, 0.1019607843);
   --bs-success-bg-subtle: #ebfaf2;
   --bs-info-bg-subtle: #e6f4ff;
@@ -105,7 +105,7 @@
   --bs-link-color: #11142d;
   --bs-link-color-rgb: 17, 20, 45;
   --bs-link-decoration: underline;
-  --bs-link-hover-color: #1e4db7;
+  --bs-link-hover-color: #39cb7f;
   --bs-link-hover-color-rgb: 30, 77, 183;
   --bs-code-color: #e83e8c;
   --bs-highlight-color: #67757c;
@@ -2645,8 +2645,8 @@ textarea.form-control-lg {
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
 }
 .form-check-input[type=checkbox]:indeterminate {
-  background-color: #1e4db7;
-  border-color: #1e4db7;
+  background-color: #39cb7f;
+  border-color: #39cb7f;
   --bs-form-check-bg-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
 }
 .form-check-input:disabled {
@@ -2736,7 +2736,7 @@ textarea.form-control-lg {
   height: 1rem;
   margin-top: -0.25rem;
   appearance: none;
-  background-color: #1e4db7;
+  background-color: #39cb7f;
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.1);
@@ -2764,7 +2764,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   appearance: none;
-  background-color: #1e4db7;
+  background-color: #39cb7f;
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.1);
@@ -3242,8 +3242,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #1e4db7;
-  --bs-btn-border-color: #1e4db7;
+  --bs-btn-bg: #39cb7f;
+  --bs-btn-border-color: #39cb7f;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: rgb(25.5, 65.45, 155.55);
   --bs-btn-hover-border-color: rgb(24, 61.6, 146.4);
@@ -3253,14 +3253,14 @@ textarea.form-control-lg {
   --bs-btn-active-border-color: rgb(22.5, 57.75, 137.25);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #1e4db7;
-  --bs-btn-disabled-border-color: #1e4db7;
+  --bs-btn-disabled-bg: #39cb7f;
+  --bs-btn-disabled-border-color: #39cb7f;
 }
 
 .btn-secondary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #1a97f5;
-  --bs-btn-border-color: #1a97f5;
+  --bs-btn-bg: #ffffff;
+  --bs-btn-border-color: #ffffff;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: rgb(22.1, 128.35, 208.25);
   --bs-btn-hover-border-color: rgb(20.8, 120.8, 196);
@@ -3270,8 +3270,8 @@ textarea.form-control-lg {
   --bs-btn-active-border-color: rgb(19.5, 113.25, 183.75);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #fff;
-  --bs-btn-disabled-bg: #1a97f5;
-  --bs-btn-disabled-border-color: #1a97f5;
+  --bs-btn-disabled-bg: #ffffff;
+  --bs-btn-disabled-border-color: #ffffff;
 }
 
 .btn-success {
@@ -3428,36 +3428,36 @@ textarea.form-control-lg {
 }
 
 .btn-outline-primary {
-  --bs-btn-color: #1e4db7;
-  --bs-btn-border-color: #1e4db7;
+  --bs-btn-color: #39cb7f;
+  --bs-btn-border-color: #39cb7f;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1e4db7;
-  --bs-btn-hover-border-color: #1e4db7;
+  --bs-btn-hover-bg: #39cb7f;
+  --bs-btn-hover-border-color: #39cb7f;
   --bs-btn-focus-shadow-rgb: 30, 77, 183;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #1e4db7;
-  --bs-btn-active-border-color: #1e4db7;
+  --bs-btn-active-bg: #39cb7f;
+  --bs-btn-active-border-color: #39cb7f;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #1e4db7;
+  --bs-btn-disabled-color: #39cb7f;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #1e4db7;
+  --bs-btn-disabled-border-color: #39cb7f;
   --bs-gradient: none;
 }
 
 .btn-outline-secondary {
-  --bs-btn-color: #1a97f5;
-  --bs-btn-border-color: #1a97f5;
+  --bs-btn-color: #ffffff;
+  --bs-btn-border-color: #ffffff;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #1a97f5;
-  --bs-btn-hover-border-color: #1a97f5;
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-hover-border-color: #ffffff;
   --bs-btn-focus-shadow-rgb: 26, 151, 245;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #1a97f5;
-  --bs-btn-active-border-color: #1a97f5;
+  --bs-btn-active-bg: #ffffff;
+  --bs-btn-active-border-color: #ffffff;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #1a97f5;
+  --bs-btn-disabled-color: #ffffff;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #1a97f5;
+  --bs-btn-disabled-border-color: #ffffff;
   --bs-gradient: none;
 }
 
@@ -4190,7 +4190,7 @@ textarea.form-control-lg {
 .nav-pills {
   --bs-nav-pills-border-radius: var(--bs-border-radius);
   --bs-nav-pills-link-active-color: #fff;
-  --bs-nav-pills-link-active-bg: #1e4db7;
+  --bs-nav-pills-link-active-bg: #39cb7f;
 }
 .nav-pills .nav-link {
   border-radius: var(--bs-nav-pills-border-radius);
@@ -5054,8 +5054,8 @@ textarea.form-control-lg {
   --bs-pagination-focus-bg: var(--bs-secondary-bg);
   --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(30, 77, 183, 0.25);
   --bs-pagination-active-color: #fff;
-  --bs-pagination-active-bg: #1e4db7;
-  --bs-pagination-active-border-color: #1e4db7;
+  --bs-pagination-active-bg: #39cb7f;
+  --bs-pagination-active-border-color: #39cb7f;
   --bs-pagination-disabled-color: var(--bs-secondary-color);
   --bs-pagination-disabled-bg: var(--bs-secondary-bg);
   --bs-pagination-disabled-border-color: var(--bs-border-color);
@@ -5288,7 +5288,7 @@ textarea.form-control-lg {
   --bs-progress-border-radius: var(--bs-border-radius);
   --bs-progress-box-shadow: var(--bs-box-shadow-inset);
   --bs-progress-bar-color: #fff;
-  --bs-progress-bar-bg: #1e4db7;
+  --bs-progress-bar-bg: #39cb7f;
   --bs-progress-bar-transition: width 0.6s ease;
   display: flex;
   height: var(--bs-progress-height);
@@ -5354,8 +5354,8 @@ textarea.form-control-lg {
   --bs-list-group-disabled-color: var(--bs-secondary-color);
   --bs-list-group-disabled-bg: var(--bs-body-bg);
   --bs-list-group-active-color: #fff;
-  --bs-list-group-active-bg: #1e4db7;
-  --bs-list-group-active-border-color: #1e4db7;
+  --bs-list-group-active-bg: #39cb7f;
+  --bs-list-group-active-border-color: #39cb7f;
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -15981,7 +15981,7 @@ a {
 }
 
 a:hover {
-  color: #1e4db7;
+  color: #39cb7f;
 }
 
 ul {

@@ -19,7 +19,7 @@ $black: #000 !default;
 // Color
 $blue: #1e4db7 !default;
 $indigo: #6610f2 !default;
-$purple: #7460ee !default;
+$purple: #39cb7f !default;
 $pink: #e83e8c !default;
 $red: #fc4b6c !default;
 $orange: #fb8c00 !default;
@@ -31,8 +31,8 @@ $cyan: #0bb2fb !default;
 $dark-transparent: rgba(0, 0, 0, 0.05);
 
 // Main Colors
-$primary: $blue !default;
-$secondary: #1a97f5 !default;
+$primary: $green !default;
+$secondary: #ffffff !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -46,7 +46,7 @@ $light-gray: $gray-100 !default;
 $light-indigo: #ebf3fe;
 
 // light colors
-$primary-bg-subtle: #ddebff !default;
+$primary-bg-subtle: #ebfaf2 !default;
 $secondary-bg-subtle: #1a97f51a !default;
 $success-bg-subtle: #ebfaf2 !default;
 $info-bg-subtle: #e6f4ff !default;
