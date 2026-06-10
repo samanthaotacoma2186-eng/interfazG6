@@ -38,20 +38,23 @@ def dashboard(request):
     return render(request, 'dashboard.html')
 
 def login_view(request):
-    if request.user.is_authenticated:
-        return redirect('dashboard')
-
     mensaje = ""
+
     if request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
-        user = authenticate(request,
-                            username=username,
-                            password=password)
+
+        user = authenticate(request, username=username, password=password)
+
+        print("Usuario:", user, "- Autenticado:", user is not None)
+
         if user is not None:
-    auth_login(request, user)
-    print("Login correcto, redirigiendo a dashboard...")
-    return redirect('/dashboard/')
+            auth_login(request, user)
+            return redirect('dashboard')
+        else:
+            mensaje = "Credenciales incorrectas"
+
+    return render(request, 'login.html', {'mensaje': mensaje})
 
 def register_view(request):
     if request.user.is_authenticated:
