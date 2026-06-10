@@ -1,6 +1,15 @@
 /********** Template CSS **********/
 :root {
-    --bs-tertiary: hsl(220, 67%, 54%);
+    --bs-primary: #1f6b46;
+    --bs-secondary: #7ebd96;
+    --bs-success: #2e8b57;
+    --bs-dark: #0b3a24;
+    --bs-light: #edf7f0;
+    --bs-tertiary: #4d9b73;
+}
+
+body {
+    background: linear-gradient(135deg, #ffffff 0%, #edf7f0 45%, #d9efe3 100%);
 }
 
 .back-to-top {
@@ -144,7 +153,9 @@
 /*** Header Carousel ***/
 .header-carousel {
     position: relative;
-    background: url(../img/bg.jpg) center center no-repeat;
+    background:
+        linear-gradient(rgba(11, 58, 36, 0.78), rgba(31, 107, 70, 0.88)),
+        url(../img/bg.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -173,7 +184,9 @@
 }
 
 .page-header {
-    background: url(../img/bg.jpg) center center no-repeat;
+    background:
+        linear-gradient(rgba(11, 58, 36, 0.78), rgba(31, 107, 70, 0.88)),
+        url(../img/bg.jpg) center center no-repeat;
     background-size: cover;
 }
 
