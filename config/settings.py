@@ -124,7 +124,7 @@ LOGIN_REDIRECT_URL = '/dashboard/'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'templates'],
+        'DIRS': [BASE_DIR / 'templates'],  # solo global si usas base.html
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
