@@ -49,11 +49,9 @@ def login_view(request):
                             username=username,
                             password=password)
         if user is not None:
-            auth_login(request, user)
-            return redirect('/dashboard/')
-        mensaje = 'Usuario o contraseña incorrectos'
-    return render(request, 'login.html', {'mensaje': mensaje})
-
+    auth_login(request, user)
+    print("Login correcto, redirigiendo a dashboard...")
+    return redirect('/dashboard/')
 
 def register_view(request):
     if request.user.is_authenticated:

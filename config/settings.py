@@ -119,6 +119,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/dashboard/'
-LOGIN_REDIRECT_URL = '/'
+
 
 TEMPLATES[0]['DIRS'] = [BASE_DIR / 'templates']
